@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="register" extends="struts-default" namespace="/">
+		<action name="login" class="com.zhbit.bbs.action.LoginAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+		<action name="select" class="com.zhbit.bbs.action.CheckAction">
+			<result name="SELECT">/select.jsp</result>
+			<result name="ADD">/Add.jsp</result>
+			<result name="DELETE">/delete.jsp</result>
+			<result name="UPDATE">/update.jsp</result>
+		</action>
+		<action name="addinfo" class="com.zhbit.bbs.action.CheckAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/Add.jsp</result>
+		</action>
+		<action name="updateinfo" class="com.zhbit.bbs.action.CheckAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/update.jsp</result>
+		</action>
+		<action name="deleteinfo" class="com.zhbit.bbs.action.CheckAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/delete.jsp</result>
+		</action>
+	</package>
+
+</struts>    
